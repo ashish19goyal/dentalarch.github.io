@@ -18,6 +18,60 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
       <![endif]-->
+      
+      <style>
+      #map {
+        width: 1500px;
+        height: 400px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+    var myLatlng=new google.maps.LatLng(28.47039, 77.09235);
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: myLatlng,
+          zoom: 14,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+ 		addMarker(map);
+      }
+		
+     function addMarker(map) 
+     {
+		var marker = new google.maps.Marker(
+		{
+		    position: myLatlng,
+    		icon: "img/ico/icon_big.ico",
+    		map: map,
+    		title: "Dental Arch Clinic"		
+  		});
+  		var infowindow = new google.maps.InfoWindow({
+		    content: "<b>Dental Arch Clinic</b>"
+  		});
+  		marker.addListener('click', toggleBounce);
+		marker.addListener( 'click', function() 
+		{
+    		infowindow.open(map, marker);
+  		});
+
+		function toggleBounce() 
+		{
+		  if (marker.getAnimation() !== null) 
+		  {
+			    marker.setAnimation(null);
+		  } else 
+		  {
+    		marker.setAnimation(google.maps.Animation.BOUNCE);
+		  }
+		}
+} 
+	
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
    </head>
    <body>
       <!-- PRELOADER STARTS
@@ -265,7 +319,7 @@
                         data-endspeed="300"
                         data-endeasing="Power1.easeIn"
                         data-captionhidden="on"
-                        style="z-index: 6"><a href="" class="getstarted">VISIT OUR CLINIC</a>
+                        style="z-index: 6"><a class="getstarted">VISIT OUR CLINIC</a>
                      </div>
                   </li>
                </ul>
@@ -290,9 +344,11 @@
                      <li><a href="#team" data-toggle="collapse" data-target=".navbar-collapse">TEAM</a></li>
                      <li><a href="#services" data-toggle="collapse" data-target=".navbar-collapse">SERVICES</a></li>
                      <li><a href="#portfolio" data-toggle="collapse" data-target=".navbar-collapse">PORTFOLIO</a></li>
-                     <li><a href="#" data-toggle="dropdown" data-target=".navbar-collapse">APPOINTMENT</a></li>
+                     <li><a data-toggle="dropdown" data-target=".navbar-collapse"><practo:abs_widget widget="d11a7620e3542ebb" class='dentalarch_practo'>Appointment</practo:abs_widget></a></li>
                      <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse">CONTACT</a></li>
                   </ul>
+                  
+					<script src="https://www.practo.com/bundles/practopractoapp/js/abs_widget_helper.js"></script>
                </div>
                <!--/.nav-collapse --> 
             </div>
@@ -344,39 +400,39 @@
             <!-- Our Team 1 Starts -->
             <div class="owl-carousel" id="our-team">
                <div class="team-contents animated" data-animation="flipInX" data-animation-delay="200">
-                  <div class="picture"><a href="#" class="teamoverlayzoom"><img src="img/team/anish.jpg" class="img-responsive" alt=""><span class="zoom"><span><i class="fa fa-briefcase"></i></span></span> </a> </div>
+                  <div class="picture"><img src="img/team/anish.jpg" class="img-responsive" alt="Dr. Anish Goyal"></div>
                   <div class="heading">Dr. Anish Goyal</div>
                   <div class="designation">Prosthodontist</div>
                   <p class="smallline">&nbsp;</p>
                   <div class="description">Specialist in the field of crown & bridge <br> Also a certified implantologist and laser dentist from manipal university.</div>
-                  <div class="team-social"><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-google-plus"></i></a></div>
+                  <div class="team-social"><a href="#"><img title='Practo' src='img/logo/practo_icon_c.png' class="dentalarch_social"></a><a href="#"><img title='Librate' src='img/logo/librate_icon_c.png' class="dentalarch_social"></a><a href="#"><img title='LinkedIn' src='img/logo/linkedin_icon_c.png' class="dentalarch_social"></a></div>
                </div>
                <div class="team-contents animated" data-animation="flipInX" data-animation-delay="400">
-                  <div class="picture"><a href="#" class="teamoverlayzoom"><img src="img/team/neha.jpg" class="img-responsive" alt=""><span class="zoom"><span><i class="fa fa-heart"></i></span></span> </a> </div>
+                  <div class="picture"><img src="img/team/neha.jpg" class="img-responsive" alt="Dr. Neha Sharma"></div>
                   <div class="heading">Dr. Neha Sharma</div>
                   <div class="designation">Oral Surgeon</div>
                   <p class="smallline">&nbsp;</p>
                   <div class="description">She is specialised in the filed of <br>Oral & Maxillofacila surgery <br>
                      She is skilled in painless removal of teeth.
                   </div>
-                  <div class="team-social"><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-google-plus"></i></a></div>
-               </div>
+                  <div class="team-social"><a href="#"><img title='Practo' src='img/logo/practo_icon_c.png' class="dentalarch_social"></a><a href="#"><img title='Librate' src='img/logo/librate_icon_c.png' class="dentalarch_social"></a><a href="#"><img title='LinkedIn' src='img/logo/linkedin_icon_c.png' class="dentalarch_social"></a></div>
+              </div>
                <div class="team-contents animated" data-animation="flipInX" data-animation-delay="600">
-                  <div class="picture"><a href="#" class="teamoverlayzoom"><img src="img/team/parul.jpg" class="img-responsive" alt=""><span class="zoom"><span><i class="fa fa-code"></i></span></span> </a> </div>
+                  <div class="picture"><img src="img/team/parul.jpg" class="img-responsive" alt="Dr. Parul Dasson"></div>
                   <div class="heading">Dr. Parul Dasson</div>
                   <div class="designation">Orthodontist</div>
                   <p class="smallline">&nbsp;</p>
                   <div class="description">An ardent orthodontist with an amiable disposition and prowess in <br> alignment of crooked and proclined teeth <br> Closure of spaces between teeth. </div>
-                  <div class="team-social"><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-google-plus"></i></a></div>
-               </div>
+                  <div class="team-social"><a href="#"><img title='Practo' src='img/logo/practo_icon_c.png' class="dentalarch_social"></a><a href="#"><img title='Librate' src='img/logo/librate_icon_c.png' class="dentalarch_social"></a><a href="#"><img title='LinkedIn' src='img/logo/linkedin_icon_c.png' class="dentalarch_social"></a></div>
+              </div>
                <div class="team-contents animated" data-animation="flipInX" data-animation-delay="800">
-                  <div class="picture"><a href="#" class="teamoverlayzoom"><img src="img/team/shrey.jpg" class="img-responsive" alt=""><span class="zoom"><span><i class="fa fa-pagelines"></i></span></span> </a> </div>
+                  <div class="picture"><img src="img/team/shrey.jpg" class="img-responsive" alt="Dr. Shrey Dhawan"></div>
                   <div class="heading">Dr. Shrey Dhawan</div>
                   <div class="designation">Endodontist</div>
                   <p class="smallline">&nbsp;</p>
                   <div class="description">Endodontist and conservative dentist. Specialised in the filed of cosmetic dentistry. </div>
-                  <div class="team-social"><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-google-plus"></i></a></div>
-               </div>
+                  <div class="team-social"><a href="#"><img title='Practo' src='img/logo/practo_icon_c.png' class="dentalarch_social"></a><a href="#"><img title='Librate' src='img/logo/librate_icon_c.png' class="dentalarch_social"></a><a href="#"><img title='LinkedIn' src='img/logo/linkedin_icon_c.png' class="dentalarch_social"></a></div>
+               	</div>
             </div>
             <!-- Our Team 1 Ends -->            
          </div>
@@ -499,44 +555,45 @@
             </div>
             <div class="owl-carousel" id="our-services">
                <div class="item animated" data-animation="flipInY" data-animation-delay="200">
-                  <div class="circle icon"><i class="fa fa-desktop"></i></div>
-                  <div class="heading-1">Cosmetic tretament</div>
-                  <div class="heading-2">SMILE DESIGNING</div>
+                  <div class="picture"><img src='img/services/digital_smile_designing.png' class="img-responsive dentalarch_services"></div>
+                  <div class="heading-1" style='line-height:1em;'>Cosmetic treatment</div>
+                  <div class="heading-1" style='line-height:1em;'>SMILE DESIGNING</div>
                   <p class="smallline">&nbsp;</p>
                   <div class="description">Digital smile designing with softwares.<br> Teeth whitening with laser.<br> Gummy smile correction. <br> Treatment of black gums</div>
                </div>
                <div class="item animated" data-animation="flipInY" data-animation-delay="400">
-                  <div class="circle icon"><i class="fa fa-columns"></i></div>
-                  <div class="heading-1">Root canal treatment</div>
-                  <div class="heading-2">SINGLE VISIT</div>
+                  <!--<div class="circle icon"><i class="fa fa-columns"></i></div>-->
+                  <div class="picture"><img src='img/services/rct.png' class="img-responsive dentalarch_services"></div>
+                  <div class="heading-1" style='line-height:1em;'>Root canal treatment</div>
+                  <div class="heading-1" style='line-height:1em;'>SINGLE VISIT</div>
                   <p class="smallline">&nbsp;</p>
                   <div class="description">Single visit R.C.T with Endomotor <br> Laser disinfection of root.<br>Treatment of decayed and broken tooth.</div>
                </div>
                <div class="item animated" data-animation="flipInY" data-animation-delay="600">
-                  <div class="circle icon"><i class="fa fa-dropbox"></i></div>
-                  <div class="heading-1">Braces</div>
-                  <div class="heading-2">ORTHO TREATMENT</div>
+                  <div class="picture"><img src='img/services/ceramic_braces.png' class="img-responsive dentalarch_services"></div>
+                  <div class="heading-1" style='line-height:1em;'>Braces</div>
+                  <div class="heading-1" style='line-height:1em;'>ORTHO TREATMENT</div>
                   <p class="smallline">&nbsp;</p>
                   <div class="description">Crooked & proclined teeth Rx.<br>Closure of tooth spaces.<br>Tooth coloured ceramic braces<br>Growth Modulation appliances<br>Cleft lip and palate RX</div>
                </div>
                <div class="item animated" data-animation="flipInY" data-animation-delay="800">
-                  <div class="circle icon"><i class="fa fa-twitter"></i></div>
-                  <div class="heading-1">LASER ASSISTED</div>
-                  <div class="heading-2">GUMS SURGERY</div>
+                  <div class="picture"><img src='img/services/laser.png' class="img-responsive dentalarch_services"></div>
+                  <div class="heading-1" style='line-height:1em;'>LASER ASSISTED</div>
+                  <div class="heading-1" style='line-height:1em;'>GUMS SURGERY</div>
                   <p class="smallline">&nbsp;</p>
                   <div class="description">Periodontal treatment<br>Painless soft tissue surgery.<br>Ulcer treatment.</div>
                </div>
                <div class="item animated" data-animation="flipInY" data-animation-delay="1000">
-                  <div class="circle icon"><i class="fa fa-pagelines"></i></div>
-                  <div class="heading-1">ORAL AND</div>
-                  <div class="heading-2">MAXILLOFACIAL SURGERY</div>
+                  <div class="picture"><img src='img/services/wisdom_teeth_removal.png' class="img-responsive dentalarch_services"></div>
+                 <div class="heading-1" style='line-height:1em;'>ORAL AND</div>
+                  <div class="heading-1" style='line-height:1em;'>MAXILLOFACIAL SURGERY</div>
                   <p class="smallline">&nbsp;</p>
                   <div class="description">Painless wisdom tooth removal.<br>Soft tissue trauma Rx.<br>Facial fracture management.<br>Oral cancer screening.</div>
                </div>
                <div class="item animated" data-animation="flipInY" data-animation-delay="1200">
-                  <div class="circle icon"><i class="fa fa-camera"></i></div>
-                  <div class="heading-1">IMPLANT TREATMENT</div>
-                  <div class="heading-2">FIXED REPLACEMENT</div>
+                  <div class="picture"><img src='img/services/implant.jpg' class="img-responsive dentalarch_services"></div>
+                  <div class="heading-1" style='line-height:1em;'>IMPLANT TREATMENT</div>
+                  <div class="heading-1" style='line-height:1em;'>FIXED REPLACEMENT</div>
                   <p class="smallline">&nbsp;</p>
                   <div class="description">Immediate tooth replacement.<br>Fixed complete dentures.<br>Implant supported complete dentures.</div>
                </div>
@@ -547,6 +604,7 @@
       <!-- /.SERVICES --> 
       <!-- FACTS STARTS
          ========================================================================= -->
+         <!--
       <section id="facts">
          <div class="container">
             <div class="row">
@@ -608,9 +666,11 @@
             </video>
          </div>
       </section>
+      -->
       <!-- /.FACTS --> 
       <!-- PORTFOLIO STARTS
          ========================================================================= -->
+		<!--      
       <section id="portfolio">
          <div class="container">
             <div class="row">
@@ -620,7 +680,6 @@
                   <p class="line">&nbsp;</p>
                </div>
             </div>
-            <!-- Portfolio Nav Starts -->
             <div class="row">
                <div class="col-md-12 animated" data-animation="fadeInUp" data-animation-delay="100">
                   <div id="options">
@@ -633,13 +692,9 @@
                   </div>
                </div>
             </div>
-            <!-- Portfolio Nav Ends --> 
             </div>
-            <!-- AJAX Portfolio Details --> 
             <div class="portfolio-detail"></div>
-            <!-- AJAX Portfolio Details --> 
             <div class="container">
-            <!-- Portfolio Thumbs Starts -->
             <div class="row" id="container-thumbs">
                
                <div class="col-xs-12 col-sm-6 col-md-3 items graphics animated" data-animation="fadeIn" data-animation-delay="200" data-project="portfolio-pages/standard-page-1.html">
@@ -691,12 +746,13 @@
                <a href="#" class="overlayzoom"><img src="img/portfolio/8.jpg" class="img-responsive" alt=""><span class="zoom"><span><i class="fa fa-video-camera"></i></span></span> </a> </div>
             
             </div>
-            <!-- Portfolio Thumbs Ends --> 
          </div>
       </section>
+      -->
       <!-- /.PORTFOLIO --> 
       <!-- PRICING STARTS
          ========================================================================= -->
+	<!--     
       <section id="pricing" data-speed="10" data-type="background">
          <div class="container">
             <div class="row">
@@ -707,7 +763,6 @@
                </div>
             </div>
             <div class="row">
-               <!-- Column 1 -->
                <div class="col-xs-12 col-sm-6 col-md-3 animated" data-animation="fadeIn" data-animation-delay="200">
                   <div class="picture"><img src="img/pricing/1.jpg" class="img-responsive" alt=""></div>
                   <div class="heading-1">STANDARD</div>
@@ -722,7 +777,6 @@
                   </div>
                   <div><a href="" class="btn">BUY NOW</a></div>
                </div>
-               <!-- Column 2 -->
                <div class="col-xs-12 col-sm-6 col-md-3 animated" data-animation="fadeIn" data-animation-delay="500">
                   <div class="picture"><img src="img/pricing/2.jpg" class="img-responsive" alt=""></div>
                   <div class="heading-1">POPULAR</div>
@@ -737,7 +791,6 @@
                   </div>
                   <div><a href="" class="btn p">BUY NOW</a></div>
                </div>
-               <!-- Column 3 -->
                <div class="col-xs-12 col-sm-6 col-md-3 animated" data-animation="fadeIn" data-animation-delay="800">
                   <div class="picture"><img src="img/pricing/3.jpg" class="img-responsive" alt=""></div>
                   <div class="heading-1">PREMIUM</div>
@@ -752,7 +805,6 @@
                   </div>
                   <div><a href="" class="btn">BUY NOW</a></div>
                </div>
-               <!-- Column 4 -->
                <div class="col-xs-12 col-sm-6 col-md-3 animated" data-animation="fadeIn" data-animation-delay="1200">
                   <div class="picture"><img src="img/pricing/4.jpg" class="img-responsive" alt=""></div>
                   <div class="heading-1">SUPREME</div>
@@ -770,9 +822,11 @@
             </div>
          </div>
       </section>
+      -->
       <!-- /.PRICING --> 
       <!-- BLOG STARTS
          ========================================================================= -->
+		<!--      
       <section id="blog">
          <div class="container">
             <div class="row">
@@ -783,7 +837,6 @@
                </div>
             </div>
             <div class="row">
-               <!-- Post 1 -->
                <div class="col-xs-12 col-sm-6 col-md-4 post animated" data-animation="fadeInUp" data-animation-delay="100">
                   <div class="picture"><img src="img/blog/thumbs/1.jpg" class="img-responsive" alt=""></div>
                   <div class="date">
@@ -796,8 +849,6 @@
                   <div class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </div>
                   <div class="more"><a href="single-blog-post-1.html"><i class="fa fa-plus"></i></a></div>
                </div>
-               <!-- /.Post 1 --> 
-               <!-- Post 1 -->
                <div class="col-xs-12 col-sm-6 col-md-4 post animated" data-animation="fadeInUp" data-animation-delay="200">
                   <div class="picture"><img src="img/blog/thumbs/2.jpg" class="img-responsive" alt=""></div>
                   <div class="date">
@@ -810,8 +861,6 @@
                   <div class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </div>
                   <div class="more"><a href="single-blog-post-2.html"><i class="fa fa-plus"></i></a></div>
                </div>
-               <!-- /.Post 1 --> 
-               <!-- Post 1 -->
                <div class="col-xs-12 col-sm-6 col-md-4 post animated" data-animation="fadeInUp" data-animation-delay="300">
                   <div class="picture"><img src="img/blog/thumbs/3.jpg" class="img-responsive" alt=""></div>
                   <div class="date">
@@ -824,14 +873,14 @@
                   <div class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. </div>
                   <div class="more"><a href="single-blog-post-1.html"><i class="fa fa-plus"></i></a></div>
                </div>
-               <!-- /.Post 1 --> 
             </div>
             <div class="row" style="text-align:center;"><a href="blog.html" class="view-all">VIEW ALL</a></div>
          </div>
       </section>
-      <!-- /.BLOG --> 
+		-->      
       <!-- CLIENTS STARTS
          ========================================================================= -->
+		<!--      
       <section id="clients">
          <div class="clients">
             <div class="items animated" data-animation="tada" data-animation-delay="0"><img src="img/clients/1.png" alt=""></div>
@@ -845,10 +894,8 @@
             <div class="items animated" data-animation="tada" data-animation-delay="800"><img src="img/clients/9.png" alt=""></div>
          </div>
       </section>
-      <!-- /.CLIENTS --> 
-      <!-- TESTIMONIALS STARTS
-         ========================================================================= -->
-      <section id="testimonials" data-speed="20" data-type="background">
+     
+       <section id="testimonials" data-speed="20" data-type="background">
          <div class="container">
             <div class="row">
                <div class="col-md-8 col-md-offset-2 section-heading animated" style="text-align:center" data-animation="fadeInUp" data-animation-delay="0">
@@ -885,6 +932,7 @@
             </div>
          </div>
       </section>
+      -->
       <!-- /.TESTIMONIALS --> 
       <!-- CONTACT STARTS
          ========================================================================= -->
@@ -932,11 +980,13 @@
                   </div>
                </div>
             </div>
+             
          </div>
       </section>
       <!-- /.CONTACT -->
       <!-- SOCIAL MEDIA STARTS
          ========================================================================= -->
+		
       <section id="social-media" data-speed="20" data-type="background">
          <div class="container">
             <div class="row">
@@ -965,7 +1015,10 @@
          </div>
       </section>
       <!-- /.SOCIAL MEDIA -->
+
+	<div id='map'></div>
       <!-- FOOTER STARTS
+
          ========================================================================= -->
 	<!--   
       <section id="footer">
@@ -1025,7 +1078,7 @@
       <!-- Parallex -->
       <script src="js/parallex/script.js"></script> 
       <!-- ScrollTo -->
-      <script src="js/nav/jquery.scrollTo.js"></script> 
+     <script src="js/nav/jquery.scrollTo.js"></script>
       <script src="js/nav/jquery.nav.js"></script> 
       <!-- Sticky -->
       <script type="text/javascript" src="js/sticky/jquery.sticky.js"></script>
@@ -1040,9 +1093,9 @@
          $("#donutchart6").donutchart("animate");
          $("#donutchart7").donutchart("animate");
          $("#donutchart8").donutchart("animate");			
-      </script>
+      </script>	
       <!-- SmoothScroll --> 
-        <script type="text/javascript" src="js/SmoothScroll/SmoothScroll.js"></script>
+       <script type="text/javascript" src="js/SmoothScroll/SmoothScroll.js"></script>
       <!-- Retina --> 
         <script type="text/javascript" src="js/retina/retina.js"></script>
         <!-- FitVids -->
