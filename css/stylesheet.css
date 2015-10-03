@@ -151,30 +151,63 @@ section#navigation {
 	margin: 0px;
 	padding: 0px;
 }
+#navigation ul.nav2 {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 16px;
+	margin: 0px;
+	padding: 0px;
+}
+
 #navigation ul.nav li {
 	padding-top: 8px;
 	padding-right: 0px;
 	padding-bottom: 8px;
 	padding-left: 0px;
 }
+#navigation ul.nav2 li {
+	padding-top: 8px;
+	padding-right: 0px;
+	padding-bottom: 8px;
+	padding-left: 0px;
+}
+
 #navigation ul.nav li:last-child {
 	padding-right: 0px;
 }
+#navigation ul.nav2 li:last-child {
+	padding-right: 0px;
+}
+
 #navigation ul.nav li a {
 	text-decoration: none;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
+#navigation ul.nav2 li a {
+	text-decoration: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
 /*.navbar-inverse .nav-collapse .nav>li>a, .navbar-inverse .nav-collapse .dropdown-menu a {
 	color: #fff;
 }*/
 #navigation ul.nav a:hover {
 	color: #000;
 }
+#navigation ul.nav2 a:hover {
+	color: #000;
+}
+
 #navigation ul.nav .current a {
 	color: #000;
 }
+#navigation ul.nav2 .current a {
+	color: #000;
+}
+
 .navbar-brand {
 	padding-top: 15px;
 	padding-bottom: 15px;
