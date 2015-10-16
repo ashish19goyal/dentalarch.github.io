@@ -8,25 +8,25 @@ permalink:           /:title
 relative_permalinks: true
 
 # Setup
-timezone:            your timezone # eg. Asia/Kathmandu
-locale:              your locale language # eg. en_us
-name:				         site name
-title:               site title
-tagline:             'tagline'
-description:         'description'
-url:                 site url
+timezone:            Asia/Kolakata # eg. Asia/Kathmandu
+locale:              en_US # eg. en_us
+name:			Dentalarch.in
+title:               Dental Arch Clinic
+tagline:             'Cosmetic, Implants, Laser - clinic'
+description:         'Advanced Dental Clinic'
+url:                 dentalarch.in
 rss:                 rss feed url
-baseurl:             '/'
-baseurl_posts_img:   '/assets/images/posts/'
-baseurl_featured_img: '/assets/images/hero/'
-baseurl_featured_thumbnail: '/assets/images/thumbnail/'
-baseurl_javascripts: '/assets/javascripts/'
-icon:                your site icon path # /assets/img/icon.png [best 300px X 300px]
+baseurl:             '/blog/'
+baseurl_posts_img:   '/blog/assets/images/posts/'
+baseurl_featured_img: '/blog/assets/images/hero/'
+baseurl_featured_thumbnail: '/blog/assets/images/thumbnail/'
+baseurl_javascripts: '/blog/assets/javascripts/'
+icon:                your site icon path # /img/ico/icon__big.ico
 disqus:              disqus_shortname # get it on https://disqus.com/admin/
 
 author:
-  name:           	 your name
-  url:            	 your site url
+  name:           	Ashish Goyal
+  url:            	https://vyavsaay.com
   facebook:          username
   twitter:           username
   google_plus:       username
