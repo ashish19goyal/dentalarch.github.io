@@ -6,7 +6,7 @@ author: Anish Goyal
 baseurl: "/b/" # the subpath of your site, e.g. /blog/
 url: "dentalarch.in" # the base hostname & protocol for your site
 destination: "blogs"
-google: "https://plus.google.com/u/0/+DentalArchClinicGurgaon"
-linkedin: "https://www.linkedin.com/company/dental-arch-clinic"
-facebook: "https://www.facebook.com/dentalarchclinic"
-twitter: "https://www.twitter.com/dental_arch"
+google: "https://plus.google.com/share?url=http://dentalarch.in/b/blogs/"
+linkedin: "http://www.linkedin.com/shareArticle?mini=true&url=http://dentalarch.in/b/blogs/&title=Dental+Arch+Clinic+Blog&source=blog"
+facebook: "http://www.facebook.com/sharer/sharer.php?u=http://dentalarch.in/b/blogs/&title=Dental+Arch+Clinic+Blog"
+twitter: "http://twitter.com/intent/tweet?status=Dental+Arch+Clinic+Blog+http://dentalarch.in/b/blogs/"
