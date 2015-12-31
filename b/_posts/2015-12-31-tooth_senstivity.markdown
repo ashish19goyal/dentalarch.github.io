@@ -2,6 +2,8 @@
 title:  "Tooth Sensitivity!!"
 subtitle: "Reasons & Remedy"
 image: "img/tooth_senstivity.jpg"
+author: "Dr. Anish Goyal"
+avatar: "img/authors/anish.jpg"
 date:   2015-12-31 17:12:12
 ---
 
