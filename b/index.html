@@ -10,7 +10,7 @@ layout: compress
         <title>{{ site.title }}</title>
         <meta name="description" content="{{ site.description }}" />
         <meta name="keywords" content="{{ site.keywords }}" />
-        <meta name="author" content="{{site.author}}" />
+        <meta name="author" content="Ashish" />
         <link rel="image_src" href="img/logo.jpg"/>
         <link rel="shortcut icon" href="img/favicon.ico">
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
@@ -68,6 +68,25 @@ layout: compress
                                         <span class="meta__date">{{ post.date | date: "%b %-d, %Y" }}</span>
                                     </div>
                                     {{ post.content }}
+                                    <div>
+                                    	{% if post.comments %}
+                                    		<div id="disqus_thread"></div>
+														<script>
+														    var disqus_config = function () {
+														        this.page.url = "http://dentalarch.in";  // Replace PAGE_URL with your page's canonical URL variable
+														        this.page.identifier = {{post.identifier}}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+														    };
+														    
+														    (function() {  // DON'T EDIT BELOW THIS LINE
+														        var d = document, s = d.createElement('script');
+														        s.src = '//dentalarch.disqus.com/embed.js';
+														        s.setAttribute('data-timestamp', +new Date());
+														        (d.head || d.body).appendChild(s);
+														    })();
+														</script>
+														<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments.</a></noscript>
+                                    	{% endif %}
+                                    </div>
                                 </div>
                             </div>
                         </div>
