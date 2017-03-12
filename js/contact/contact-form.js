@@ -16,6 +16,7 @@ $(function(){
 		{
 			type:'POST',
 			url:'https://vyavsaay.com/ajax/mailer.php',
+			// url:'http://localhost/ajax/mailer.php',
 			data:
 			{
 				'user':'dentalarch',
@@ -53,8 +54,10 @@ $(function(){
 		{
 			type:'POST',
 			url:'https://vyavsaay.com/ajax/mailer.php',
+			// url:'http://localhost/ajax/mailer.php',
 			data:
 			{
+				'user':'dentalarch',
 				'key':'vyavsaay-mailservice-20161110',
 				'message':
 	    		{
@@ -63,6 +66,7 @@ $(function(){
 					'from_email': email,
 					'to_name':'DentalArch',
 			      	'to':'contact@dentalarch.in',
+					//  	'to':'info@vyavsaay.com',
 			      	'subject': 'Appointment Request: '+day+' - '+time,
 			      	'html': 'Appointment request from : '+name+'<br>Phone: '+phone+'<br>Email: '+email+'<br>Time Slot: '+day+'-'+time
 				}
