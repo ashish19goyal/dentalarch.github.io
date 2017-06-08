@@ -88,7 +88,7 @@ section#slider {
 }
 /* Static Slider Picture */
 .slider-bg-static {
-	background-image: url(../img/slider/static-bg/1.jpg);
+	background-image: url(../img/parallax/dental-chair.jpg);
 	background-size: cover;
 	background-position: 50% 50%;
 	background-attachment: fixed;
@@ -97,7 +97,7 @@ section#slider {
 }
 /* Animated Slider Picture */
 .slider-bg-animated {
-	background-image: url(../img/slider/animted-bg/1.jpg);
+	background-image: url(../img/parallax/dental-chair.jpg);
 	background-size: cover;
 	background-position: 50% 50%;
 	background-attachment: fixed;
@@ -490,7 +490,7 @@ section {
 	color: #fff;
 }
 #quotes {
-	background: url(../img/parallax/1.jpg) 50% 0 repeat-y fixed;
+	background: url(../img/parallax/dental-chair.jpg) 50% 0 repeat-y fixed;
 }
 #quotes h2 {
 	color: #FFF;
@@ -1012,7 +1012,7 @@ section#pricing {
 }
 #pricing {
 	background-attachment: fixed;
-	background-image: url(../img/parallax/1.jpg);
+	background-image: url(../img/parallax/dental-chair.jpg);
 	background-repeat: repeat-y;
 	background-position: 50% 0;
 }
@@ -1289,7 +1289,7 @@ a.view-all:hover {
 /*------------------------*/
 .blog-page-heading {
 	background-attachment: fixed;
-	background-image: url(../img/parallax/1.jpg);
+	background-image: url(../img/parallax/dental-chair.jpg);
 	background-repeat: repeat-y;
 	background-position: 50% 95%;
 }
@@ -1417,7 +1417,7 @@ section#blog-page {
 }
 .blog-single-post-heading {
 	background-attachment: fixed;
-	background-image: url(../img/parallax/1.jpg);
+	background-image: url(../img/parallax/dental-chair.jpg);
 	background-repeat: repeat-y;
 	background-position: 50% 95%;
 }
@@ -1617,7 +1617,7 @@ section#clients {
 }
 #testimonials {
 	background-attachment: fixed;
-	background-image: url(../img/parallax/1.jpg);
+	background-image: url(../img/parallax/dental-chair.jpg);
 	background-repeat: repeat-y;
 	background-position: 50% 0;
 }
@@ -1667,7 +1667,7 @@ section#clients {
 }
 #social-media {
 	background-attachment: fixed;
-	background-image: url(../img/parallax/1.jpg);
+	background-image: url(../img/parallax/dental-chair.jpg);
 	background-repeat: repeat-y;
 	background-position: 50% 0;
 }
