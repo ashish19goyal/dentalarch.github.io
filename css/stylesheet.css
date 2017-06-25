@@ -149,26 +149,6 @@ section#facts{padding-top:0px;padding-bottom:0px;}
 #our-facts .items:hover .circle{background-color:#ffffff;color:#000;}
 #our-facts .items:hover .icon{background-color:#000;color:#fff;}
 #our-facts .items:hover .icon i{color:#fff;}
-section#pricing{padding-bottom:60px;}
-#pricing .row{text-align:center!important;}
-#pricing{color:#fff;}
-#pricing{background-attachment:fixed;background-image:url(../img/parallax/dental-chair.jpg);background-repeat:repeat-y;background-position:50% 0;}
-#pricing h2{color:#FFF;}
-#pricing .line{border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#fff;margin-bottom:60px;width:100px;margin-left:auto;margin-right:auto;}
-#pricing .smallline{border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:#ffffff;margin-top:10px;margin-bottom:30px;padding-bottom:10px;width:100px;text-align:center;margin-left:auto;margin-right:auto;}
-#pricing .picture img{width:100%;height:auto;background:transparent;border-radius:50%;position:relative;margin-bottom:30px;border:3px solid #FFF;}
-#pricing .heading-1{font-size:30px;text-transform:uppercase;font-weight:700;position:relative;text-align:center;margin-left:auto;margin-right:auto;top:-200px;margin-bottom:-40px;}
-#pricing .circle{width:100px;height:100px;border-radius:50px;position:relative;text-align:center;margin-left:auto;margin-right:auto;background-color:#ccc;color:#000;top:-90px;margin-bottom:-20px;padding-top:18px;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;border:3px solid #ccc;}
-#pricing .circle span.price{font-size:36px;text-transform:uppercase;font-weight:700;line-height:1;}
-#pricing .circle span{font-size:18px;}
-#pricing .p-table{position:relative;top:-40px;}
-#pricing .p-table ul{padding:0px;margin:0px;}
-#pricing .p-table ul li{padding-top:16px;padding-bottom:16px;border-top-width:1px;border-bottom-width:1px;border-top-style:solid;border-bottom-style:solid;border-top-color:rgba(256, 256, 256, 0.2);border-bottom-color:rgba(204, 204, 204, 0.2);list-style-type:none;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;}
-#pricing .p-table ul li:hover{background-color:rgba(256, 256, 256, 0.1);}
-#pricing .btn{color:#000;background-color:#ccc;padding-top:6px;padding-right:20px;padding-bottom:6px;padding-left:20px;font-size:18px;margin-bottom:60px;}
-#pricing .p{background-color:#fff;}
-#pricing .col-md-3:hover .circle{background-color:#000;color:#fff;}
-#pricing .col-md-3:hover .btn{background-color:#000;color:#FFF;}
 #blog .line{border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#e5e5e5;margin-bottom:60px;width:100px;margin-left:auto;margin-right:auto;}
 #blog .blog-contents{margin-bottom:30px;}
 #blog .post{text-align:center;margin-bottom:50px;margin-top:30px;}
@@ -297,7 +277,6 @@ section#footer{padding-top:50px;padding-bottom:50px;}
 .visible{visibility:visible;}
 #video{display:none;}
 #quotes{background-image:none;background-color:#666666;}
-#pricing{background-image:none;background-color:#666666;}
 .blog-page-heading{background-image:none;background-color:#666666;}
 .blog-single-post-heading{background-image:none;background-color:#666666;}
 #testimonials{background-image:none;background-color:#666666;}
