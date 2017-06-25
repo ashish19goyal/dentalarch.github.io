@@ -1,15 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://dentalarch.in/index.html</loc>
+    <loc>http://www.dentalarch.in/index.html</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://dentalarch.in/dental-blog.html</loc>
+    <loc>http://www.dentalarch.in/dental-blog.html</loc>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>http://dentalarch.in/dental-tourism.html</loc>
+    <loc>http://www.dentalarch.in/dental-tourism.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.dentalarch.in/braces.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.dentalarch.in/laser.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.dentalarch.in/implants.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.dentalarch.in/root-canal-treatment.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.dentalarch.in/smile-designing.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.dentalarch.in/surgery.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.dentalarch.in/tooth-paste.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.dentalarch.in/tooth-sensitivity.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.dentalarch.in/dr-anish-goyal.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.dentalarch.in/dr-neha-sharma.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.dentalarch.in/dr-parul-dasson.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://www.dentalarch.in/dr-shrey-dhawan.html</loc>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>

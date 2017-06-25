@@ -1,0 +1,19 @@
+{
+  "name": "DentalArch Clinic",
+  "short_name": "DentalArch",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Best Dental Clinic in Gurgaon",
+  "icons": [{
+    "src": "img/logo/dlogo.png",
+    "sizes": "135x74",
+    "type": "image/png"
+  },
+  {
+	  "src": "img/logo/dlogo@2x.png",
+      "sizes": "270x147",
+      "type": "image/png"
+  }],
+"orientation": "portrait"
+}
