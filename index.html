@@ -18,7 +18,6 @@
         <link rel="shortcut icon" href="img/ico/dfavicon.ico" />
         <!-- ALL STYLESHEETS -->
         <link href="css/all-stylesheet.css" type="text/css" rel="stylesheet" />
-        <link href="css/datepicker.css" rel="stylesheet" type='text/css' />
         <link rel="image_src" href="img/ico/logo.jpg" />
 
         <style>
@@ -43,61 +42,20 @@
       <section id="slider">
          <div class="tp-banner-container">
             <div class="tp-banner" >
-               <ul>
-                  <!-- SLIDE NR. 1-->
-                  <li data-transition="fade" data-slotamount="5" data-masterspeed="700">
-                     <!-- MAIN IMAGE -->
-                     <div style='color:#7cb81a;width:100%;height:50px;text-align:center;padding-top:10px;' class='row'>
+                       <!-- MAIN IMAGE -->
+                     <div style='color:#7cb81a;width:100%;height:10%;text-align:center;padding-top:10px;' class='row'>
                          <div class='col-sm-4'><b>Emergency Services Available 24x7</b></div>
                          <div class='col-sm-4'><b> ISO 9001:2015 Certified Dental Clinic</b></div>
                          <div class='col-sm-4'><b><a href="index.html#contact">Book Appointments</a></b></div>
                      </div>
-                     <img src="img/slider/fullscreen/dental-clinic-reception.jpg"  alt="Dental Arch Reception Area" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                     <img style='width:100%;' src="img/slider/fullscreen/dental-clinic-reception.jpg"  alt="Dental Arch Reception Area" data-bgfit="cover">
                      <!-- LAYER NR. 1 -->
-                     <div class="tp-caption mediumlarge_light_white_center customin customout start"
-                        data-x="center"
-                        data-y="-120"
-                        data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                        data-speed="1000"
-                        data-start="1000"
-                        data-easing="Back.easeInOut"
-                        data-endspeed="300">
+                     <div style='position:absolute;top:20%;width:100%;text-align:center;z-index:6;' class="tp-caption very_large_text sft customout">
+                         <img src="img/logo/dlogo@2x.png" alt="DentalArch Clinic Logo">
                      </div>
-                     <!-- LAYER NR. 2 -->
-                     <div class="tp-caption very_large_text sft customout"
-                        data-x="center"
-                        data-y="60"
-                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                        data-speed="800"
-                        data-start="1800"
-                        data-easing="Power4.easeOut"
-                        data-endspeed="300"
-                        data-endeasing="Power1.easeIn"
-                        data-captionhidden="on"
-                        style="z-index: 6"><img src="img/logo/dlogo@2x.png" alt="">
+                     <div style='position:absolute;top:60%;width:100%;text-align:center;z-index:6;'>
+                         <span style='font-size:1.7em;color:#fff;font-weight:bold;'>Welcome to Dental Arch Gurgaon</span>
                      </div>
-                     <!-- LAYER NR. 3 -->
-                     <!-- LAYER NR. 4 -->
-                     <div class="tp-caption large_text sft customout"
-                        data-x="center"
-                        data-y="350"
-                        data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-                        data-speed="800"
-                        data-start="1800"
-                        data-easing="Power4.easeOut"
-                        data-endspeed="300"
-                        data-endeasing="Power1.easeIn"
-                        data-captionhidden="on"
-                        style="z-index: 6"><span style='font-size:45px;'>Welcome to Dental Arch Gurgaon</span>
-                     </div>
-                     <!-- LAYER NR. 5 -->
-
-                  </li>
-                  <!-- SLIDE NR. 2-->
-
-               </ul>
-               <div class="tp-bannertimer"></div>
             </div>
          </div>
       </section>
@@ -319,6 +277,8 @@
       </section>
       <!-- /.SOCIAL MEDIA -->
 
+
+      <link href="css/datepicker.css" rel="stylesheet" type='text/css' />
       <!-- Bootstrap -->
       <script src="js/jquery-1.11.0.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
@@ -332,26 +292,7 @@
       <!-- Slider Revolution 4.x Scripts -->
       <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
       <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.js"></script>
-      <script>
-            var revapi;
 
-     		jQuery(document).ready(function() {
-
-     			   revapi = jQuery('.tp-banner').revolution(
-     				{
-     					delay:15000,
-     					startwidth:1170,
-     					startheight:500,
-     					hideThumbs:10,
-     					fullWidth:"off",
-     					fullScreen:"on",
-     					fullScreenOffsetContainer: "",
-     					hideCaptionAtLimit:400
-     					//hideAllCaptionAtLimit:400
-     				});
-
-     		});	//ready
-        </script>
         <script src="owl-carousel/owl-carousel/owl.carousel.js"></script>
         <script src="js/custom.js"></script>
         <script src="js/nav/jquery.scrollTo.js"></script>
