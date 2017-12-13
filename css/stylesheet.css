@@ -38,7 +38,7 @@ section#navigation{padding-top:0px;padding-bottom:0px;}
 #navigation ul.nav .current a{color:#000;}
 #navigation ul.nav2 .current a{color:#000;}
 .navbar-brand{padding-top:15px;padding-bottom:15px;padding-left:16px;}
-section{padding-top:120px;padding-bottom:90px;}
+section{padding-top:40px;padding-bottom:90px;}
 .section-heading h1{font-size:40px;text-transform:uppercase;font-weight:400;padding:0px;margin:0px;line-height:1;}
 .section-heading h2{font-size:30px;text-transform:uppercase;font-weight:300;padding:0px;margin:0px;line-height:1;}
 .section-heading p{padding:0px;margin:0px;}
@@ -281,4 +281,5 @@ section#footer{padding-top:50px;padding-bottom:50px;}
 .blog-single-post-heading{background-image:none;background-color:#666666;}
 #testimonials{background-image:none;background-color:#666666;}
 #social-media{background-image:none;background-color:#666666;}
+#team .picture img{width:50%;height:auto;background:transparent;position:relative;margin-bottom:25px;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;}
 }
