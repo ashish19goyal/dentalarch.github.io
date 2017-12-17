@@ -283,6 +283,10 @@ section#footer{padding-top:50px;padding-bottom:50px;}
 #social-media{background-image:none;background-color:#666666;}
 #team .picture img{width:50%;height:auto;background:transparent;position:relative;margin-bottom:25px;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;}
 }
+.home-dektop-logo{position:absolute;top:20%;width:100%;text-align:center;z-index:6;}
 h3.green{color:#7cb81a;font-weight:700;}
 .welcome{font-size:1.7em;color:#fff;font-weight:bold;}
-@media (max-width:500px){.welcome{display:none;}
+@media (max-width:500px){
+	.welcome{display:none;}
+	.home-dektop-logo{display: none;}
+}
