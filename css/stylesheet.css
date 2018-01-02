@@ -38,17 +38,20 @@ section#navigation{padding-top:0px;padding-bottom:0px;}
 #navigation ul.nav .current a{color:#000;}
 #navigation ul.nav2 .current a{color:#000;}
 .navbar-brand{padding-top:15px;padding-bottom:15px;padding-left:16px;}
-section{padding-top:40px;padding-bottom:90px;}
+section{padding-top:40px;padding-bottom:20px;}
 .section-heading h1{font-size:40px;text-transform:uppercase;font-weight:400;padding:0px;margin:0px;line-height:1;}
 .section-heading h2{font-size:30px;text-transform:uppercase;font-weight:300;padding:0px;margin:0px;line-height:1;}
 .section-heading p{padding:0px;margin:0px;}
 .section-heading .line{border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#e5e5e5;padding-bottom:16px;margin-bottom:40px;width:100px;text-align:center;}
-#about .heading{font-size:28px;text-transform:uppercase;font-weight:400;}
-#about .circle{color:#f00;width:90px;height:90px;background:transparent;border:2px solid #ff0000;border-radius:120px;position:relative;margin-bottom:16px;text-align:center;padding-top:26px;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;}
-#about .circle i{font-size:36px;}
-#about .description{margin-top:6px;margin-bottom:30px;}
-/*#about .col-md-4:hover .circle{background-color:#000000;}
-#about .col-md-4:hover i{color:#fff;}*/
+.about .heading{font-size:24px;text-transform:uppercase;font-weight:400;color:#1b4b2e;}
+.about .circle{color:#f00;width:90px;height:90px;background:transparent;border:2px solid #ff0000;border-radius:120px;position:relative;margin-bottom:16px;text-align:center;padding-top:26px;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;}
+.about .circle i{font-size:36px;}
+.about .description{margin-top:6px;margin-bottom:30px;color:#1b4b2e;}
+.services .col-md-4 {padding-bottom:40px;text-align:center;}
+.services .heading{font-size:20px;font-weight:400;color:#1b4b2e;}
+.services a{text-decoration:none;}
+.services .circle{color:#f00;width:90px;height:90px;background:transparent;border:2px solid #ff0000;border-radius:120px;position:relative;margin-bottom:6px;text-align:center;padding-top:26px;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;}
+.services .circle i{font-size:30px;}
 #about-carousel .item img{display:block;width:100%;height:auto;}
 #bar{width:0%;max-width:100%;height:4px;background:#000;}
 #progressBar{width:100%;background:#EDEDED;}
@@ -87,15 +90,6 @@ section{padding-top:40px;padding-bottom:90px;}
 #quotes .text{font-size:22px;font-weight:300;text-align:center;}
 #quotes .name{color:#FFF;font-size:22px;font-weight:300;text-align:center;font-style:italic;margin-top:20px;margin-bottom:20px;}
 #our-services .item{text-align:center;padding-left:20px;padding-right:20px;margin-bottom:30px;}
-#services .line{border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#e5e5e5;margin-bottom:60px;width:100px;margin-left:auto;margin-right:auto;}
-#services .circle{width:150px;height:150px;background:transparent;border:3px solid #000;border-radius:150px;position:relative;margin-bottom:25px;text-align:center;padding-top:32px;margin-left:auto;margin-right:auto;-webkit-transition:all 0.3s;-moz-transition:all 0.3s;transition:all 0.3s;}
-#services .circle i{font-size:80px;}
-#services .item:hover .circle{background-color:#000;color:#fff;}
-#services .item:hover i{color:#fff;}
-#services .smallline{border-bottom-width:2px;border-bottom-style:solid;border-bottom-color:#e5e5e5;margin-top:3px;margin-bottom:20px;padding-bottom:10px;width:100px;text-align:center;margin-left:auto;margin-right:auto;}
-#services .heading-1{font-size:20px;text-transform:uppercase;font-weight:300;color:#000;}
-#services .heading-2{font-size:26px;text-transform:uppercase;font-weight:400;line-height:12px;color:#000;}
-#services .description{margin-top:6px;margin-bottom:30px;}
 #portfolio{}
 #portfolio .line{border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#e5e5e5;margin-bottom:30px;width:100px;margin-left:auto;margin-right:auto;}
 #options{margin-top:30px;margin-bottom:50px;font-size:18px;line-height:normal;margin-left:auto;margin-right:auto;text-align:center;}
@@ -240,7 +234,7 @@ section#clients{padding-top:50px;padding-bottom:50px;}
 #contact .line{border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#e5e5e5;margin-bottom:60px;width:100px;margin-left:auto;margin-right:auto;}
 #contact .input-group{padding-top:6px;padding-bottom:6px;}
 #contact .input-group-btn{padding-top:6px;padding-bottom:6px;}
-#contact .address{font-size:16px;padding-top:20px;line-height:1.5;}
+#contact .address{font-size:16px;padding-top:20px;line-height:1.5;color:#1b4b2e;}
 #contact .address i{padding-right:10px;text-align:center;width:30px;}
 #contact .form{padding-top:2px;}
 #message_post{padding-top:6px;padding-bottom:6px;}
@@ -290,3 +284,4 @@ h3.green{color:#7cb81a;font-weight:700;}
 	.welcome{display:none;}
 	.home-dektop-logo{display: none;}
 }
+.grey-back{background:url(../img/textures/light-grey-noise.png);padding-top:30px;}
