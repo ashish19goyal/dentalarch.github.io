@@ -15,5 +15,6 @@
       "sizes": "270x147",
       "type": "image/png"
   }],
-"orientation": "portrait"
+"orientation": "portrait",
+"theme_color": "#194627"
 }
