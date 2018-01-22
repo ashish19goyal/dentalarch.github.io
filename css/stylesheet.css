@@ -285,3 +285,4 @@ h3.green{color:#7cb81a;font-weight:700;}
 	.home-dektop-logo{display: none;}
 }
 .grey-back{background:url(../img/textures/light-grey-noise.png);padding-top:30px;}
+.no-underline{text-decoration: none;}
