@@ -1,0 +1,9 @@
+<!--||topics section||-->
+<div class="tag-list animated" data-animation="fadeInUp" data-animation-delay="0">
+   <div class="title">Other Relevant Topics</div>
+   <div class="smallline2">&nbsp;</div>
+   <a href="wisdom-tooth-extraction.html" >Wisdom Tooth</a>
+   <a href="laser.html" >Laser</a>
+   <a href="braces.html" >Crooked Teeth</a>
+   <a href="implants.html" >Tooth Caps</a>
+</div>
