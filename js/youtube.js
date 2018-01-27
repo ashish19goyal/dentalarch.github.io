@@ -4,7 +4,8 @@ var YouTube = function(options)
 		videoId: 'u-LzwEkiJ4Q',
 		height: '390',
 		width: Math.min(640,$(window).width()-50),
-		player: ''
+		player: '',
+		elementId:'videoplayer'
 	};
 	var settings = $.extend(defaults, options || {});
 
@@ -22,7 +23,7 @@ var YouTube = function(options)
 		{
 			if(YT)
 			{
-				settings.player = new YT.Player('videoplayer',
+				settings.player = new YT.Player(settings.elementId,
 				{
 					height: settings.height,
 					width: settings.width,
@@ -38,5 +39,3 @@ var YouTube = function(options)
 	this.addYoutubeLib();
 	this.youtubeIni();
 };
-
-youtube=new YouTube();

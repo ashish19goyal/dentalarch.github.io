@@ -84,22 +84,24 @@
             <div class="row">
                <!-- Right Column Start -->
                <div class="col-md-3">
-                   <div class="picture"><img src="img/services/laser.png" class="img-responsive" alt="Laser treatment"></div>
-                   <div class="info">By <a href="dr-anish-goyal.html"><i class="fa fa-user"></i>Dr. Anish Goyal</a>  <a href="#"><i class="fa fa-tags"></i>Laser Dentist</a></div>
+                   <div class="about-blog">
+                      <div class="title">Laser Treatment</div>
+                   </div>
+                   <div class="info">By <a href="dr-anish-goyal.html"><i class="fa fa-user"></i>Dr. Neha Sharma</a>  <a href="#"><i class="fa fa-tags"></i>Oral Surgeon & Laser Dentist</a></div>
+                   <div class="smallline">&nbsp;</div>
                </div>
                <!-- Right Column Ends -->
                <!-- Left Column Start -->
                <div class="col-md-9">
-                  <!-- Post Starts -->
-                  <!-- About Blog Starts -->
-                  <div class="about-blog animated" data-animation="fadeInUp" data-animation-delay="0">
-                     <div class="title">Laser Assisted Treatment</div>
-                  </div>
-                  <!-- About Blog Ends -->
                   <div class="blog-post animated" data-animation="fadeInUp" data-animation-delay="0">
-                     <div class="smallline">&nbsp;</div>
-                     <div class="description">
-                        Description about laser assisted treatments
+                      <div id="videoplayer" title='Laser Assisted Mucocele Treatment'></div>
+                      <div class="description">
+                        Laser Assisted Mucocele.
+                      </div>
+                      <div class="smallline">&nbsp;</div>
+                      <div id="videoplayer2" title='Laser Assisted Frenectomy Video'></div>
+                      <div class="description">
+                        Laser Assisted Frenectomy.
                      </div>
                   </div>
                   <!-- Post Ends -->
@@ -192,6 +194,15 @@
       <script src="js/retina/retina.js"></script>
         <!-- FitVids -->
       <script src="js/jquery.fitvids.js"></script>
-
+      <script src="js/youtube.js"></script>
+      <script>
+        var video1=new YouTube({
+            videoId: 'SLQfqHIwdN4'
+        });
+        var video2=new YouTube({
+            videoId: 'CNJ5T9i1tNY',
+            elementId: 'videoplayer2'
+        });
+      </script>
    </body>
 </html>
